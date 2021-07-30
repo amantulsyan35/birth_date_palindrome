@@ -1,38 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Hahmlet', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Form-group {
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-bottom: 2em;
+  width: 70%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Form-group input {
+  padding: 1em;
+  width: 30%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.Check {
+  border: none;
+  outline: none;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 20%;
+  background-color: #cdb4db;
+  color: black;
+}
+
+.Birthday-loading {
+  width: 70%;
+  margin: auto;
+}
+
+.Birthday-loading img {
+  width: 30%;
+}
+
+.Birthday-output {
+  padding: 1em;
+  background-color: #cdb4db;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5em;
+}
+
+/* Responsive css */
+
+@media (max-width: 576px) {
+  .App-heading {
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App-desc {
+    margin-left: 1em;
+    margin-right: 1em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Form-group {
+    width: 100%;
+  }
+
+  .Form-group input {
+    padding: 1em;
+    width: 70%;
+  }
+
+  .Check {
+    width: 30%;
+  }
+
+  .Birthday-loading img {
+    width: 50%;
+  }
+
+  .Birthday-output {
+    width: 80%;
+    margin-bottom: 2em;
   }
 }

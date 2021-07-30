@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap');
+
+.Hero {
+  margin-top: 1em;
+  padding: 1em;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-rows: 20% 80%;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: #ffc8dd;
+  font-family: 'Hahmlet', serif;
+}
+
+.Hero1 {
+  height: auto;
+  background-color: #cdb4db;
+}
+
+.Hero2 {
+  padding: 2em;
+  height: 15em;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 0.5em;
+}
+
+.Hero-button {
+  border: none;
+  background-color: #cdb4db;
+  color: black;
+  text-decoration: none;
+  padding: 0.5em;
+  width: 35%;
+}
+
+.Hero-item-2 {
+  display: flex;
+}
+
+/* Responsive css */
+
+@media (max-width: 576px) {
+  .Hero {
+    padding: 0.5em;
+    grid-template-rows: 20% 80%;
+  }
+
+  .Hero1 {
+    height: auto;
+  }
+
+  .Hero2 {
+    padding: 1em;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+}
